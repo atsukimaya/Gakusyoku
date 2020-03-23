@@ -2,7 +2,8 @@
 <html lang=”ja” dir=”ltr”>
 <head>
   <meta charset=”UTF-8″ />
-  <title>課題</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>厚木麻耶</title>
   <style>
     body{
       font-family: 'Yu Gothic', 'MS PGothic', "Arial", sans-serif;
@@ -18,7 +19,7 @@
 
     h1, h2, h3, h4, h5 {
        font-family: 'Yu Gothic', 'MS PGothic', "Arial", sans-serif;
-       font-weight: 400;
+       font-weight: bold;
      }
      h1 {
        font-size: 35px;
@@ -28,7 +29,6 @@
        font-size: 25px;
        line-height: 30px;
        padding-top: 50px;
-       font-weight: bold;
      }
      h3 {
        font-size: 18px;
@@ -59,7 +59,7 @@
     }
 
     .main{
-      max-width: 700px;
+      width: 700px;
       margin: auto;
       padding: 50px 0px;
       /* background: #fffad1; */
@@ -95,9 +95,15 @@
       margin-top: 100px;
     }
     .document img{
-
+      max-width: 100%;
     }
 
+    @media screen and (max-width:700px) { /*タブレット・スマートフォン*/
+      .main .document{
+        width: 90%;
+        margin: auto;
+      }
+    }
   </style>
 
 </head>
